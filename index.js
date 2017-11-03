@@ -8,6 +8,6 @@ function distanceFromHqInBlocks(currentStreet){
 
 function distanceFromHqInFeet(currentStreet){
   distanceFromHqInBlocks(currentStreet);
-  distance = distanceFromHqInBlocks() * 264;
+  distance = blocks * 264;
   return distance;
 }
