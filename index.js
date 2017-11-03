@@ -10,6 +10,6 @@ function distanceFromHqInFeet(currentStreet){
   return distanceFromHqInBlocks(currentStreet) * 264;
 }
 
-function distanceTravelledInFeet (startPoint, endPoint){
-  return Math.abs(endPoint - startPoint) * 264;
+function distanceTravelledInFeet (start, destination){
+  return Math.abs(destination - start) * 264;
 }
