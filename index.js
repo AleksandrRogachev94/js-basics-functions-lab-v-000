@@ -2,13 +2,15 @@
 
 function distanceFromHqInBlocks(currentStreet){
   console.log("In first function")
-  let blocks = Math.abs(42 - currentStreet);
-  return blocks;
+  return Math.abs(42 - currentStreet);
 }
 
 
 function distanceFromHqInFeet(currentStreet){
-  
-  distance = distanceFromHqInBlocks(currentStreet) * 264;
-  return distance;
+  return distanceFromHqInBlocks(currentStreet) * 264;
+}
+
+function distanceTravelledInFeet (startPoint, endPoint){
+  return distanceFromHqInFeet(Math.abs(endPoint - startPoint));
+
 }
