@@ -11,5 +11,5 @@ function distanceFromHqInFeet(currentStreet){
 }
 
 function distanceTravelledInFeet (startPoint, endPoint){
-  return distanceFromHqInFeet(Math.abs(endPoint - startPoint));
+  return Math.abs(endPoint - startPoint) * 264;
 }
